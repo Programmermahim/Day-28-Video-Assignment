@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-align: center;
+}
+.mid_contain{
+    max-width:1300px;
+    margin: auto;
+}
+/* Beginning Css */
+body,h1,h2,h3,h4,h5,h6,span{
+    font-family: 'Work Sans', sans-serif;
+}
+.header-Section{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 6px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+.header-logo{
+    width: 30%;
+}
+.header-logo img {
+    width: 64px;
+    float: left;
+    margin-right: 10px;
+    padding: 5px 0px;
+}
+.header-logo span{
+    font-size: 30px;
+    margin-top: 14px;
+    display: inline-block;
+    font-weight: 500;
+}
+.header-menu{
+    width: 55%;
+}
+.header-button {
+    width: 15%;
+}
+.header-button a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 40px;
+    margin-top: 13px;
+    font-size: 22px;
+    line-height: 1px;
+    border: 1px solid #6278df;
+    border-radius: 10px;
+    color: #6278df !important;
+}
+.primary-menu{}
+.primary-menu ul{}
+.primary-menu ul li{
+    display: inline-block;
+}
+.primary-menu ul li a{
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    line-height: 60px;
+    color: black;
+    font-size: 20px;
+}
+
+.primary-menu ul li a:hover{
+    color: #6278df;
+}
+
+/* Dropdown menu */
+.primary-menu ul li{
+    position: relative;
+}
+.primary-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background-color: #fff;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.primary-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.primary-menu ul li ul li:nth-child(3){
+    position: relative;
+}
+.primary-menu ul li ul li:nth-child(3){
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 120px;
+    background-color: #fff;
+    
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.primary-menu ul li ul:nth-child(3):hover li {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+/* banner Css */
+.banner-section{
+    background-image: url(https://i.ibb.co/VDrMSbJ/mbr-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 169px 0px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 70px;
+}
+.banner-section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.486);
+    z-index: -1;
+
+}
+.banner-contain{}
+.banner-contain p{
+    color: #fff;
+    font-size: 31px;
+    margin-bottom: 35px;
+}
+.banner-contain h2{
+    color: #fff;
+    font-size: 68px;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+.default-btn{
+    text-decoration: none;
+    color: #3a3737;
+    background: #fff;
+    padding: 27px 34px;
+    margin-right: 25px;
+    border-radius: 14px;
+    font-size: 25px;
+    transition: 0.4s;
+}
+.default-btn:hover{
+    background-color: #6278df;}
+
+/* Banner section */
+.banner-bottom{
+    padding: 100px 0px;
+    background-color: #F7F9FF;
+}
+.video_left{
+    width: 48%;
+}
+.video_content_right{
+    width: 48%;
+}
+.video_content_right h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 29px;
+}
+.video_content_right p {
+    color: #767676;
+    font-weight: 300;
+    letter-spacing: 4px;
+    line-height: 1.7em;
+    font-size: 21px;
+}
+/* Service section */
+.service_section{
+    background-color: #fff;
+    padding: 100px 0px;
+}
+.section-title{}
+.section-title h1{
+    font-size: 54px;
+    margin-bottom: 40px;
+}
+.section-title p{
+    font-size: 30px;
+    color: #767676;
+}
+/* .services-item */
+.service-box{
+    width: 31.3%;
+    box-shadow: 0px 1px 19px 0px rgb(0 0 0 / 24%);
+    margin: 1%;
+    padding: 49px;
+    box-sizing: border-box;
+}
+.services-item {
+    margin-top: 55px;
+}
+.services-box {}
+.s-icon {
+    width: 50px;
+    float: left;
+    height: 100px;
+    font-size: 36px;
+    margin-right: 36px;
+    color: #6278df;
+}
+.s-icon span{}
+.s-contact h3{
+    margin-bottom: 0px;
+}
+.s-contact p{
+    margin-top: 28px;
+    font-size: 19px;
+    color: #767676;
+    font-weight: 300;
+}
+
+
